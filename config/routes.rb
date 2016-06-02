@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
+  resources :microposts
   get 'courses/index'
   get 'greeter/hello' => "greeter#hello" # ref to hello action
   get 'greeter/goodbye'
+  get 'users/index' => 'users/index'
+  get 'microposts/index'
 
   root 'courses#index'
+
+  resources :users
+  resources :microposts
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
