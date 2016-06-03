@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'greeter/goodbye'
   get 'users/index' => 'users/index'
   get 'microposts/index'
-
+  get 'static_pages/home'
   root 'courses#index'
 
   resources :users
