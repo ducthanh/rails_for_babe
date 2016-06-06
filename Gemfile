@@ -10,7 +10,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
+gem 'bootstrap-sass'
 gem 'sprockets'
 gem 'httparty', '0.13.5'
 gem 'bcrypt-ruby', '3.1.2'
