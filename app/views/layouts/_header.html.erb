@@ -1,7 +1,18 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "sample app", root_path, id: "logo" %>
+      <%= link_to "Coursera search", root_path, id: "logo" %>
+      <%= form_tag courses_index_path, method: 'get' do %>
+          <div class="nav search">
+            <li>
+              <%= text_field_tag :looking_for, params[:search] %>
+            </li>
+            <li>
+              <%= submit_tag "Search" , :name => nil, class: "btn" %>
+            </li>
+
+          </div>
+      <% end %>
       <nav>
         <ul class="nav pull-right">
           <li><%= link_to "Home", root_path %></li>
