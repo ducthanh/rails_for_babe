@@ -2,13 +2,13 @@
   <div class="navbar-inner">
     <div class="container">
       <%= link_to "Coursera search", root_path, id: "logo" %>
-      <%= form_tag courses_index_path, method: 'get' do %>
+      <%= form_tag courses_index_path, method: 'get', id:'search-bar' do %>
           <div class="nav search">
             <li>
               <%= text_field_tag :looking_for, params[:search] %>
             </li>
             <li>
-              <%= submit_tag "Search" , :name => nil, class: "btn" %>
+              <%= submit_tag "Search" , :name => nil, id: "search_btn", class: "search"%>
             </li>
 
           </div>
