@@ -14,6 +14,9 @@ gem 'bootstrap-sass'
 gem 'sprockets'
 gem 'httparty', '0.13.5'
 gem 'bcrypt-ruby', '3.1.2'
+gem 'faker'
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

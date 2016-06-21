@@ -26,5 +26,21 @@
 </table>
 
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button onclick="getElementById('demo').innerHTML=Date()">The time is?</button>
 
-<%= link_to 'New User', new_user_path %>
+<p id="demo"></p>
+
+<h1>All users</h1>
+
+<ul class="users">
+    <%= render @users %>
+</ul>
+
+<%= will_paginate %>
